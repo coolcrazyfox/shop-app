@@ -3,6 +3,7 @@ import Loader from './components/Loader';
 import Product from "./components/Product";
 import {useProducts} from "./hooks/products";
 import ErrorMessage from "./components/ErrorMessage";
+import Modal from "./components/Modal";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             {/*<Product product={products[0]}/>*/}
             {/*<h1>`hello {count}`</h1>*/}
             {/*<button onClick={() => setCount(count + 1)}>click</button>*/}
+            <Modal/>
 
         </div>
     );
