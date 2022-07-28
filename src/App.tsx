@@ -4,11 +4,12 @@ import Product from "./components/Product";
 import {useProducts} from "./hooks/products";
 import ErrorMessage from "./components/ErrorMessage";
 import Modal from "./components/Modal";
+import CreateProduct from "./components/CreateProduct";
 
 
 function App() {
     // const [count, setCount] = useState(0)
-    const {loading, error, products}=useProducts()
+    const {loading, error, products} = useProducts()
 
     return (
         <div className="container mx-auto max-w-2xl pt-5">
@@ -18,7 +19,9 @@ function App() {
             {/*<Product product={products[0]}/>*/}
             {/*<h1>`hello {count}`</h1>*/}
             {/*<button onClick={() => setCount(count + 1)}>click</button>*/}
-            <Modal/>
+            <Modal>
+                <CreateProduct/>
+            </Modal>
 
         </div>
     );
