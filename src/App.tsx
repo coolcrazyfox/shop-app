@@ -1,6 +1,8 @@
 import React from 'react';
+import Loader from './components/Loader';
 import Product from "./components/Product";
 import {useProducts} from "./hooks/products";
+import ErrorMessage from "./components/ErrorMessage";
 
 
 function App() {
@@ -9,8 +11,8 @@ function App() {
 
     return (
         <div className="container mx-auto max-w-2xl pt-5">
-            {loading && <h2 className="text-center">Loading...</h2>}
-            {error && <p className="text-center text-red-600">{error}</p>}
+            {loading && <Loader/>}
+            {error && <ErrorMessage error={error}/>}
             {products.map(pr => <Product product={pr} key={pr.id}/>)}
             {/*<Product product={products[0]}/>*/}
             {/*<h1>`hello {count}`</h1>*/}
