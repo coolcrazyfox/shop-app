@@ -1,15 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Loader from './components/Loader';
 import Product from "./components/Product";
 import {useProducts} from "./hooks/products";
 import ErrorMessage from "./components/ErrorMessage";
 import Modal from "./components/Modal";
 import CreateProduct from "./components/CreateProduct";
+import {IProduct} from "./models";
 
 
 function App() {
     // const [count, setCount] = useState(0)
-    const {loading, error, products} = useProducts()
+    const {loading, error, products, addProduct} = useProducts()
+    const [modal, setModal] = useState(true)
+    const createHandler = (product:IProduct)=>{
+        setModal(false)
+        addProduct(product)
+    }
 
     return (
         <div className="container mx-auto max-w-2xl pt-5">
@@ -19,9 +25,9 @@ function App() {
             {/*<Product product={products[0]}/>*/}
             {/*<h1>`hello {count}`</h1>*/}
             {/*<button onClick={() => setCount(count + 1)}>click</button>*/}
-            <Modal title={'Create new product'}>
-                <CreateProduct/>
-            </Modal>
+            {modal && <Modal title={'Create new product'}>
+                <CreateProduct onCreate={createHandler}/>
+            </Modal>}
 
         </div>
     );

@@ -14,8 +14,10 @@ const initProductData: IProduct = {
         count: 3
     }
 }
-
-const CreateProduct = () => {
+interface CreateProductProps {
+    onCreate: (product:IProduct)=> void
+}
+const CreateProduct = ({onCreate}:CreateProductProps) => {
     const [value, setValue] = useState('')
     const [error, setError] = useState('')
     const submitHandler = async (e: React.FormEvent) => {
@@ -28,6 +30,7 @@ const CreateProduct = () => {
         initProductData.title = value
 
         const response = await axios.post<IProduct>('https://fakestoreapi.com/products', initProductData)
+        onCreate(response.data)
     }
     const changeHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
         setValue(e.target.value)
