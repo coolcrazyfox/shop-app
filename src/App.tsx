@@ -19,7 +19,7 @@ function App() {
             {/*<Product product={products[0]}/>*/}
             {/*<h1>`hello {count}`</h1>*/}
             {/*<button onClick={() => setCount(count + 1)}>click</button>*/}
-            <Modal>
+            <Modal title={'Create new product'}>
                 <CreateProduct/>
             </Modal>
 
