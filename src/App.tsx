@@ -3,6 +3,7 @@ import ProductsPage from "./pages/ProductsPage";
 import AboutPage from "./pages/AboutPage";
 import Navigation from "./components/Navigation";
 import ContactsPage from "./pages/ContactsPage";
+import SupportPage from "./pages/SupportPage";
 
 
 function App() {

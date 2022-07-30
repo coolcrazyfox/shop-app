@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Support = () => {
+const SupportPage = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Support = () => {
     );
 };
 
-export default Support;
+export default SupportPage;
