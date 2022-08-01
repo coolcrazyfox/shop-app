@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation";
 import ContactsPage from "./pages/ContactsPage";
 import SupportPage from "./pages/SupportPage";
 import ErrorPage from "./pages/ErrorPage";
+import LoginPage from "./pages/LoginPage";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                 <Route path={'/contacts'} element={<ContactsPage/>}/>
                 <Route path={'/support'} element={<SupportPage/>}/>
                 <Route path={'/error'} element={<ErrorPage/>}/>
+                <Route path={'/login'} element={<LoginPage/>}/>
             </Routes>
         </>
 
