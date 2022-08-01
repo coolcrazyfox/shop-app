@@ -7,10 +7,10 @@ const Navigation = () => {
             <span className={'font-bold'}>My-APP</span>
             <span>
                 <Link to={'/'} className={'mr-2'}>Products</Link>
-                <Link to={'/about'}>About</Link>
-                <Link to={'/contacts'}>Contacts</Link>
-                <Link to={'/support'}>Support</Link>
-                <Link to={'/login'}>Login</Link>
+                <Link to={'/about'} className={'mr-2'}>About</Link>
+                <Link to={'/contacts'} className={'mr-2'}>Contacts</Link>
+                <Link to={'/support'} className={'mr-2'}>Support</Link>
+                <Link to={'/login'} className={'mr-2'}>Login</Link>
             </span>
 
         </nav>
