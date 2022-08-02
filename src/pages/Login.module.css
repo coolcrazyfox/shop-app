@@ -1,40 +1,95 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    overflow: hidden;
-}
-section{
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*}*/
+/*body{*/
+/*    overflow: hidden;*/
+/*}*/
+section {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 100vh;
+    /*overflow: hidden;*/
+    /*box-sizing: border-box;*/
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
     background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
 }
-section .color{
+
+section .color {
     position: absolute;
     filter: blur(150px);
 }
-section .color:nth-child(1){
-    top: -350px;
-    width: 600px;
-    height: 600px;
+
+section .color:nth-child(1) {
+    top: 100px;
+    width: 1000px;
+    height: 500px;
     background: #ff359b;
 }
-section .color:nth-child(2){
-    bottom: -150px;
+
+section .color:nth-child(2) {
+    bottom: -100px;
     left: 100px;
-    width: 500px;
+    width: 700px;
     height: 500px;
-    background: #fffd87;
+    background: #f6ed2d;
 }
-section .color:nth-child(3){
+
+section .color:nth-child(3) {
     bottom: 50px;
-    right: 100px;
-    width: 300px;
+    right: 200px;
+    width: 700px;
     height: 300px;
     background: #00d2ff;
+}
+
+.box {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+.form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+.form h2{
+    position: relative;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.form h2:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: white;
+}
+.form .inputBox{
+    width: 100%;
+    margin-top: 20px;
 }
