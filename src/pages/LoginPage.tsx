@@ -2,9 +2,12 @@ import React from 'react';
 
 const LoginPage = () => {
     return (
-        <div>
-            Login page
-        </div>
+        <section>
+            <div className={'color'} ></div>
+            <div className={'color'}></div>
+            <div className={'color'}></div>
+
+        </section>
     );
 };
 
