@@ -8,6 +8,15 @@ const LoginPage = () => {
             <div className={s.color}></div>
             <div className={s.color}></div>
             <div className={s.box}>
+                <div className={s.square} >1</div>
+                <div className={s.square} >2</div>
+                <div className={s.square} >3</div>
+                <div className={s.square} >4</div>
+                <div className={s.square} >5</div>
+                {/*<div className="square" style={{"--i:0;"}}></div>*/}
+                {/*<div className="square" style="--i:1;"></div>*/}
+                {/*<div className="square" style="--i:2;"></div>*/}
+                {/*<div className="square" style="--i:3;"></div>*/}
                 <div className={s.container}>
                     <div className={s.form}>
                         <h2>Login Form</h2>
@@ -21,8 +30,8 @@ const LoginPage = () => {
                             <div className={s.inputBox}>
                                 <input type="submit" value={"Login"}/>
                             </div>
-                            <p className={s.forget}>Forgot Password?<a href={'#'}>Click here</a></p>
-                            <p className={s.forget}>Don't have an account?<a href={'#'}>Sing up</a></p>
+                            <p className={s.forget}>Forgot Password ? <a href={'#'}>Click here</a></p>
+                            <p className={s.forget}>Don't have an account ? <a href={'#'}>Sing up</a></p>
                         </form>
                     </div>
                 </div>
