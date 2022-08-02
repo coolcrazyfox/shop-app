@@ -8,11 +8,11 @@ const LoginPage = () => {
             <div className={s.color}></div>
             <div className={s.color}></div>
             <div className={s.box}>
-                <div className={s.square} ></div>
-                <div className={s.square} ></div>
-                <div className={s.square} ></div>
-                <div className={s.square} ></div>
-                {/*<div className={s.square} ></div>*/}
+                <div className={s.square} >1</div>
+                <div className={s.square} >2</div>
+                <div className={s.square} >3</div>
+                <div className={s.square} >4</div>
+                <div className={s.square} >5</div>
                 {/*<div className="square" style={{"--i:0;"}}></div>*/}
                 {/*<div className="square" style="--i:1;"></div>*/}
                 {/*<div className="square" style="--i:2;"></div>*/}
