@@ -64,8 +64,6 @@ section .color:nth-child(3) {
     right: -60px;
     width: 100px;
     height: 100px;
-    border:2px solid #ff9900;
-    background: #ff9900;
 }
 .box .square:nth-child(2){
     top: 150px;
