@@ -145,6 +145,7 @@ section .color:nth-child(3) {
     white-space: nowrap;
     border-right: 4px solid white;
     animation: animateH2 8s linear infinite;
+    filter: drop-shadow(0 0 20px white) drop-shadow(0 0 50px white);
     /*height: 4px;*/
     /*background: white;*/
 }
