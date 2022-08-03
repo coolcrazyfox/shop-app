@@ -154,7 +154,7 @@ section .color:nth-child(3) {
         width: 0;
     }
     70%,90%{
-        width: 48%;
+        width: 50%;
     }
 }
 .form .inputBox{
