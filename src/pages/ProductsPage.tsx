@@ -7,6 +7,7 @@ import ErrorMessage from "../components/ErrorMessage";
 import Product from "../components/Product";
 import Modal from "../components/Modal";
 import CreateProduct from "../components/CreateProduct";
+import RangeSlider from "../components/RangeSlider";
 
 const ProductsPage = () => {
     // const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ const ProductsPage = () => {
     return (
         <div className="container mx-auto max-w-2xl pt-5">
             {loading && <Loader/>}
+            <RangeSlider/>
             {error && <ErrorMessage error={error}/>}
             {products.map(pr => <Product product={pr} key={pr.id}/>)}
             {/*<Product product={products[0]}/>*/}
@@ -30,6 +32,7 @@ const ProductsPage = () => {
             {modal && <Modal title={'Create new product'} onClose={close}>
                 <CreateProduct onCreate={createHandler}/>
             </Modal>}
+
             <button
                 onClick={open}
                 className={"fixed bottom-5 right-5 rounded-full bg-red-700 text-white text-2xl px-4 py-2"}
