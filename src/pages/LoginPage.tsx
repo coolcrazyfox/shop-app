@@ -19,7 +19,7 @@ const LoginPage = () => {
                 {/*<div className="square" style="--i:3;"></div>*/}
                 <div className={s.container}>
                     <div className={s.form}>
-                        <h2>Login Form</h2>
+                        <h2 data-text="Login Form">Login Form</h2>
                         <form >
                             <div className={s.inputBox}>
                                 <input type="text" placeholder={"Username"}/>

@@ -134,14 +134,14 @@ section .color:nth-child(3) {
     letter-spacing: 1px;
     margin-bottom: 40px;
 }
-.form h2:before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 80px;
-    height: 4px;
-    background: white;
+.form h2::before{
+    content: attr(data-text);
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*bottom: -10px;*/
+    /*width: 80px;*/
+    /*height: 4px;*/
+    /*background: white;*/
 }
 .form .inputBox{
     width: 100%;
