@@ -25,13 +25,11 @@ const SupportPage = () => {
                                 <input type="text" placeholder={"Username"}/>
                             </div>
                             <div className={s.inputBox}>
-                                <input type="password" placeholder={"Password"}/>
+                                <input type="text" placeholder={"Your text "}/>
                             </div>
                             <div className={s.inputBox}>
-                                <input type="submit" value={"Login"}/>
+                                <input type="submit" value={"Send"}/>
                             </div>
-                            <p className={s.forget}>Forgot Password ? <a href={'#'}>Click here</a></p>
-                            <p className={s.forget}>Don't have an account ? <a href={'#'}>Sing up</a></p>
                         </form>
                     </div>
                 </div>
