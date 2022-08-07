@@ -13,10 +13,6 @@ const ContactsPage = () => {
                 <div className={s.square} ></div>
                 <div className={s.square} ></div>
                 <div className={s.square} ></div>
-                {/*<div className="square" style={{"--i:0;"}}></div>*/}
-                {/*<div className="square" style="--i:1;"></div>*/}
-                {/*<div className="square" style="--i:2;"></div>*/}
-                {/*<div className="square" style="--i:3;"></div>*/}
                 <div className={s.container}>
                     <div className={s.form}>
                         <h2 data-text="&nbsp;Contacts">&nbsp;Contact</h2>
