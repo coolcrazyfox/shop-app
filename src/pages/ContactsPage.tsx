@@ -17,9 +17,7 @@ const ContactsPage = () => {
                     <div className={s.form}>
                         <h2 data-text="&nbsp;Contacts">&nbsp;Contact</h2>
                         <form >
-                            <div className={s.inputBox}>
-                                <input type="text" placeholder={"Username"}/>
-                            </div>
+
                             <div className={s.inputBox}>
                                 <input type="password" placeholder={"Password"}/>
                             </div>
