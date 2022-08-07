@@ -17,9 +17,7 @@ const ContactsPage = () => {
                     <div className={s.form}>
                         <h2 data-text="&nbsp;Contacts">&nbsp;Contact</h2>
                         <form >
-                            <div className={s.inputBox}>
-                                <input type="submit" value={"Login"}/>
-                            </div>
+
                             <p className={s.forget}>Forgot Password ? <a href={'#'}>Click here</a></p>
                             <p className={s.forget}>Don't have an account ? <a href={'#'}>Sing up</a></p>
                         </form>
