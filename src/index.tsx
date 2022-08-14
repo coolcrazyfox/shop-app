@@ -15,6 +15,4 @@ root.render(
             <App />
         </ModalState>
     </HashRouter>
-
-
 );

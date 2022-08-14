@@ -31,7 +31,7 @@ const LoginPage = () => {
                                 <input type="submit" value={"Login"}/>
                             </div>
                             <p className={s.forget}>Forgot Password ? <a href={'#'}>Click here</a></p>
-                            <p className={s.forget}>Don't have an account ? <a href={'#'}>Sing up</a></p>
+                            <p className={s.forget}>Don't have an account ? <a href={'#'}>Sign up</a></p>
                         </form>
                     </div>
                 </div>
