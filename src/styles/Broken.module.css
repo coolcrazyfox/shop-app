@@ -2,14 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: #918691;
+    min-height: 50vh;
+    background: rgba(145, 134, 145, 0);
+    border: 1px solid red;
 }
 
 .box {
     position: relative;
-    width: 400px;
-    height: 300px;
+    width: 200px;
+    height: 150px;
     /*background: rgba(252, 251, 252, 0.46);*/
 }
 

@@ -7,15 +7,13 @@ interface BrokenProductProps {
 }
 
 const Broken = ({brokenId}: BrokenProductProps) => {
-    const bgImage='blue'
     return (
         <div className={s.container}>
-            <div className={s.box}
-                 style={{backgroundImage:`url(${brokenId.image})`}}>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div className={s.box}>
+                <span style={{position:'absolute', inset: '0', backgroundImage:`url(${brokenId.image})`, transition: '0.5s', backgroundSize: 'cover'}}></span>
+                <span style={{position:'absolute', inset: '0', backgroundImage:`url(${brokenId.image})`, transition: '0.5s', backgroundSize: 'cover'}}></span>
+                <span style={{position:'absolute', inset: '0', backgroundImage:`url(${brokenId.image})`, transition: '0.5s', backgroundSize: 'cover'}}></span>
+                <span style={{position:'absolute', inset: '0', backgroundImage:`url(${brokenId.image})`, transition: '0.5s', backgroundSize: 'cover'}}></span>
             </div>
 
         </div>
