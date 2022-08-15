@@ -9,6 +9,7 @@ import LoginPage from "./pages/LoginPage";
 import BrokenPage from "./pages/BrokenPage";
 
 
+
 function App() {
     return(
         <>
@@ -17,7 +18,7 @@ function App() {
                 <Route path={'/'} element={<ProductsPage/>}/>
                 <Route path={'/about'} element={<AboutPage/>}/>
                 <Route path={'/contacts'} element={<ContactsPage/>}/>
-                <Route path={'/broken'} element={<BrokenPage />}/>
+                <Route path={'/broken'} element={<BrokenPage/>}/>
                 <Route path={'/error'} element={<ErrorPage/>}/>
                 <Route path={'/login'} element={<LoginPage/>}/>
             </Routes>

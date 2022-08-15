@@ -4,6 +4,7 @@ import axios, {AxiosError} from "axios";
 
 export function useProducts(){
     const [products, setProducts] = useState<IProduct[]>([])
+    const [broken, setBroken] = useState<IProduct[]>([])
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState('')
     const addProduct=(product:IProduct)=>{
@@ -17,6 +18,7 @@ export function useProducts(){
             const response = await axios.get<IProduct[]>('https://fakestoreapi.com/products?limit=5')
             console.log(response)
             setProducts(response.data)
+            setBroken(response.data)
             setLoading(false)
         } catch (e: unknown) {
             const error = e as AxiosError
@@ -28,5 +30,5 @@ export function useProducts(){
     useEffect(() => {
         fetchProducts()
     }, [])
-    return {products, error, loading, addProduct}
+    return {products,broken, error, loading, addProduct}
 }
